@@ -64,6 +64,5 @@ export const todoSlice = createSlice({
 
 export const { createTodo, deleteTodo, updateTodo} = todoSlice.actions;
 export const todos = (state: RootState) => state.todos.todos
-console.log(RootState)
 export default todoSlice.reducer;
 
