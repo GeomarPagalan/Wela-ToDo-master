@@ -22,7 +22,8 @@ const CreateTodo = () => {
         setId(nanoid())
     }
     return (
-     <div class="ui piled center aligned segment">
+    
+     <div className="ui piled center aligned segment">
             <form className="ui form" onSubmit={onSubmit}>
                 <div className="ui input">
                     
@@ -31,7 +32,7 @@ const CreateTodo = () => {
                 </div>
             </form>
     </div>
-    )
-}
+    );
+};
 
 export default CreateTodo

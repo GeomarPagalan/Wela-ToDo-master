@@ -33,7 +33,7 @@ const TodoDetails = ({ todo }) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default TodoDetails

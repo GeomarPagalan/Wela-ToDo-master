@@ -19,14 +19,15 @@ const TodosList = () => {
                      </div>
                 </div>
          </div>
-                    )
+                    );
                 })
             })
+
         }
-    }, [todos])
+    }, [todos]);
 
     return <div className="ui relaxed divided list">{renderList}</div>
-}
+};
 
 export default TodosList
 

@@ -29,7 +29,7 @@ export default function Home() {
                     rel="stylesheet"
                     href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
                 />
-            <div class="ui center aligned segment">
+            <div className="ui center aligned segment">
              <i className="tasks icon" />
                      To Do List
                 <CreateTodo />
