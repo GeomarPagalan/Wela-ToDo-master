@@ -3,6 +3,8 @@ import Todo from '../../../domain/entities/Todo';
 import TodoRepositoryImpl from '../../../data/repositories/TodoRepositoryImpl';
 import TodoService from '../../../domain/usecases/TodoService';
 
+import { RootState } from "../store"
+
 interface TodoState {
   todos: Array<Todo>
 }
@@ -60,7 +62,8 @@ export const todoSlice = createSlice({
     },
 })
 
-export const { createTodo, deleteTodo, updateTodo} = todoSlice.actions
-export const todos = (state: TodoState) => state.todos.todos
-export default todoSlice.reducer
+export const { createTodo, deleteTodo, updateTodo} = todoSlice.actions;
+export const todos = (state: RootState) => state.todos.todos
+console.log(RootState)
+export default todoSlice.reducer;
 
