@@ -4,11 +4,12 @@ import { useAppSelector } from "app/redux/hooks"
 
 const TodosList = () => {
     const todos = useAppSelector((state) => state.todos.todos)
-    const [renderList, setRenderList] = useState(() => {})
+    const [renderList, setRenderList] = useState(() => {return null})
     useEffect(() => {
-        if (window !== "undefined") {
+        if (typeof window !== 'undefined') {
         setRenderList(() => {
         return todos.map((todo) => {
+            
         return (
         <div className="item" key={todo.id}>
             <div className="content">

@@ -22,7 +22,7 @@ const TodoDetails = ({ todo }) => {
                         type="checkbox"
                         checked={todo.complete}
                         onChange={() => {}}
-                        onClick={(e) => dispatch(updateTodo(new Todo(todo.id, todo.title, e.target.checked)))}
+                        onClick={(e) => dispatch(updateTodo(new Todo(todo.id, todo.title, e.currentTarget.checked)))}
                     />
                     <label>Complete</label>
                 </div>

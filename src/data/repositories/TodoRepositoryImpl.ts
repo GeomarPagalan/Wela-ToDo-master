@@ -1,6 +1,5 @@
 import Todo from '../../domain/entities/Todo'
 import { TodoRepository } from 'domain/repositories/TodoRepository'
-import { nanoid } from '@reduxjs/toolkit';
 
 export default class TodoRepositoryImpl implements TodoRepository {
     GetTodos(): Array<Todo> {
@@ -16,7 +15,7 @@ export default class TodoRepositoryImpl implements TodoRepository {
     CreateTodoList(value): Array<Todo> {
         const listValue = this.GetTodos()
         const currentValue = listValue.concat(value)
-        this.SetTodo(currentValue)
+        this.SetTodos(currentValue)
         return currentValue
     }
     DeleteTodoList(value): Array<Todo> {

@@ -38,7 +38,7 @@ export const todoSlice = createSlice({
             reducer: (state, action: PayloadAction<Todo>) => {
                 const updatedState = state.todos.map((payload) => {
                     if (action.payload.id === payload.id) {
-                        return new Todo(action.payload.id, action.payload.title, action.payload.done)
+                        return new Todo(action.payload.id, action.payload.title, action.payload.complete)
                     }
                     return payload
                 })

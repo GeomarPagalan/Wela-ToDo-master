@@ -7,10 +7,10 @@ export default class TodoServiceImpl {
     constructor(tdl: TodoRepository) {
         this.todoRepo = tdl
     }
-    GetTodos(): Array<Todo[]> {
+    GetTodos(): Array<Todo> {
         return this.todoRepo.GetTodos()
     }
-    SetTodos(todo: Array<Todo[]>): void {
+    SetTodos(todo: Array<Todo>): Array<Todo> {
         return this.todoRepo.SetTodos(todo)
     }
     CreateTodoList(todo: Todo): Array<Todo> {
